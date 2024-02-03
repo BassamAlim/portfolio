@@ -2,16 +2,16 @@ import {Icons} from "../components/Icons";
 
 const Skills = [
     {
+        name: "Data Science & Machine Learning",
+        Icon: Icons.MachineLearning
+    },
+    {
         name: "Android Development",
         Icon: Icons.Android
     },
     {
         name: "Backend Development",
         Icon: Icons.Backend
-    },
-    {
-        name: "Data Science & Machine Learning",
-        Icon: Icons.MachineLearning
     },
     {
         name: "Java",
@@ -50,16 +50,8 @@ const Skills = [
         Icon: Icons.Algorithms
     },
     {
-        name: "Office 365",
-        Icon: Icons.Office365
-    },
-    {
         name: "Problem Solving",
         Icon: Icons.ProblemSolving
-    },
-    {
-        name: "English",
-        Icon: Icons.English
     },
     {
         name: "Soft Skills",

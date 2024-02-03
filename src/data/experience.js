@@ -6,7 +6,7 @@ export const Experience = [
         company: 'Saudi Azm',
         company_url: 'https://azm.sa/',
         location: 'Riyadh, Saudi Arabia',
-        description: '',
+        description: 'Working on multiple AI projects and products mainly focused on Generative AI, including FAHIM (Financial Analysis Heuristic Intelligent Model) and a Custom Virtual Assistant capable of executing tasks on behalf of the user.',
         tags: ['Data Science', 'Data Analysis', 'Machine Learning', 'Data Mining', 'Data Visualization', 'Text Mining', 'Python']
     },
     {

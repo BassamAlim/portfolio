@@ -15,11 +15,13 @@ const About = () => {
 
                 <div className="font-general-regular w-full sm:w-3/4 text-left">
                     <p
-                        className="text-2xl mb-4 text-ternary-dark dark:text-ternary-light"
+                        className="text-2xl mb-24 text-ternary-dark dark:text-ternary-light"
                     >
-                        I am a dedicated senior Computer Science student at King Saud University,
-                        with experience in Android Development and Data Science,
-                        and excels in programming and problem solving.
+                        I am a dedicated Data Scientist / Software Developer.
+                        With a passion for learning and a strong desire to succeed.
+                        I have a Bachelor degree in Computer Science from King Saud University with first-class honors.
+                        I have professional experience in Data Science & Machine Learning, as well as personal experience in Android Development and Web Development.
+                        I excel in programming and problem solving.
                     </p>
 
                     <h2

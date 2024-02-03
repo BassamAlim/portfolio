@@ -1,12 +1,7 @@
-import {FiGithub, FiGlobe, FiLinkedin} from 'react-icons/fi';
+import {FiGithub, FiLinkedin} from 'react-icons/fi';
 import GooglePlayIcon from './../../icons/google-play';
 
 const socialLinks = [
-    {
-        id: 1,
-        icon: <FiGlobe/>,
-        url: 'https://www.bassamalim.me/',
-    },
     {
         id: 2,
         icon: <FiGithub/>,
@@ -31,7 +26,7 @@ const AppFooter = () => {
                 {/* Footer social links */}
                 <div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
                     <p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
-                        Follow me
+                        Find me on
                     </p>
                     <ul className="flex gap-4 sm:gap-8">
                         {socialLinks.map((link) => (
