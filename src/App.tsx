@@ -76,7 +76,7 @@ export default function App() {
   const replay = () => {
     clearInterval(timer.current)
     setYear(FIRST_YEAR)
-    timer.current = setInterval(() => setYear((y) => {
+    timer.current = window.setInterval(() => setYear((y) => {
       if (y >= LAST_YEAR) { clearInterval(timer.current); return y }
       return y + 1
     }), 700)
