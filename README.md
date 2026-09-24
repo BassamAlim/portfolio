@@ -2,7 +2,7 @@
 
 My personal site, built around one idea: **my work, drawn as a graph**. I sit at the centre; the organisations I've worked with, the projects and libraries I've built, and the tools behind them branch out from there.
 
-**Live:** [portfolio-cac44.web.app](https://portfolio-cac44.web.app)
+**Live:** [bassamalim.web.app](https://bassamalim.web.app)
 
 ![Social preview of the portfolio](public/og.png)
 
