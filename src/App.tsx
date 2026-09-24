@@ -323,7 +323,7 @@ function Contact({ phone, copied, onCopy }: { phone: boolean, copied: boolean, o
       <span className="mono muted sec-label">GET IN TOUCH</span>
       <div className="contact-body">
         <h2 className="talk">Got a hard AI problem?{phone ? ' ' : <br />}<span className="accent">Let’s talk.</span></h2>
-        {!phone && <p className="soft talk-p">I’m always happy to hear about interesting problems in retrieval, agents or document understanding, especially ones that need to run on your own infrastructure.</p>}
+        {!phone && <p className="soft talk-p">I’m always happy to hear about interesting problems in AI and software engineering.</p>}
         <div className="ctas">
           <a className="cta inv" href={`mailto:${EMAIL}`}><Icon d={ICONS.mail} size={18} /><span className="grow">{EMAIL}</span><span className="carrow">↗</span></a>
           {copy}
