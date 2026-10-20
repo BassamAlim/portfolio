@@ -28,10 +28,11 @@ const RAW: RawNode[] = [
   { id: 'cortex', label: 'Cortex', type: 'Project', year: 2025, urls: [['cortex.entropy.sa', 'https://cortex.entropy.sa']], disc: ['Agents', 'Retrieval', 'Document AI'], org: 'Entropy', what: 'Enterprise AI knowledge platform on self-hosted open models: Arabic-first ingestion, knowledge graphs, agentic search.', role: 'Lead engineer → technical owner' },
   { id: 'retrievalengine', label: 'RetrievalEngine', type: 'Library', year: 2025, disc: ['Retrieval'], org: 'Entropy', what: 'Internal library: semantic, BM25 and hybrid retrieval, reranking, evaluation. Reused across client work.', role: 'Designer and builder' },
   { id: 'contentminer', label: 'ContentMiner', type: 'Library', year: 2025, disc: ['Document AI'], org: 'Entropy', what: 'Internal library: parsing, OCR, vision-language extraction and evaluation harnesses.', role: 'Designer and builder' },
+  { id: 'rune', label: 'Rune', type: 'Project', year: 2026, urls: [['Google Play', 'https://play.google.com/store/apps/details?id=bassamalim.rune'], ['GitHub · Android', 'https://github.com/BassamAlim/rune-android'], ['GitHub · Linux', 'https://github.com/BassamAlim/rune-desktop']], disc: ['Mobile'], org: 'Side project', what: 'Open-source deterministic password generator: one master password derives every site password, nothing stored. Android and Linux apps sync over Wi-Fi with no server.', role: 'Solo' },
   { id: 'yolo', label: 'Object Detection', type: 'Project', year: 2026, disc: ['Vision'], org: 'Entropy', what: 'Collected data and fine-tuned YOLO object detection models for enterprise clients.', role: 'Data and training' },
   { id: 'xgboost', label: 'XGBoost', type: 'Tech' }, { id: 'selenium', label: 'Selenium', type: 'Tech' },
   { id: 'kotlin', label: 'Kotlin/Compose', type: 'Tech' }, { id: 'android', label: 'Android', type: 'Tech' },
-  { id: 'go', label: 'Go/Lambda', type: 'Tech' }, { id: 'ultralytics', label: 'Ultralytics', type: 'Tech' },
+  { id: 'go', label: 'Go/Lambda', type: 'Tech' }, { id: 'rust', label: 'Rust', type: 'Tech' }, { id: 'ultralytics', label: 'Ultralytics', type: 'Tech' },
   { id: 'aws', label: 'AWS', type: 'Tech' }, { id: 'langchain', label: 'LangChain', type: 'Tech' },
   { id: 'fastapi', label: 'FastAPI', type: 'Tech' }, { id: 'openllm', label: 'Open LLMs', type: 'Tech' },
   { id: 'pydantic', label: 'Pydantic AI', type: 'Tech' }, { id: 'nextjs', label: 'Next.js', type: 'Tech' },
@@ -42,7 +43,7 @@ const RAW: RawNode[] = [
 /** My direct relation to each node: the spokes of the graph. */
 export const ME: [id: string, rel: string][] = [
   ['ksu', 'STUDIED AT'], ['masterworks', 'TRAINED AT'], ['entropy', 'WORKS AT'], ['airaware', 'CO-AUTHORED'],
-  ['hidaya', 'BUILT'], ['asaar', 'BUILT'], ['faheim', 'CO-BUILT'], ['compliance', 'BUILT'], ['cortex', 'BUILT'],
+  ['hidaya', 'BUILT'], ['asaar', 'BUILT'], ['rune', 'BUILT'], ['faheim', 'CO-BUILT'], ['compliance', 'BUILT'], ['cortex', 'BUILT'],
   ['retrievalengine', 'DESIGNED'], ['contentminer', 'DESIGNED'], ['yolo', 'TRAINED'],
 ]
 
@@ -52,13 +53,14 @@ export const OTHER: [string, string][] = [
   ['compliance', 'openllm'], ['contentminer', 'vlm'], ['retrievalengine', 'qdrant'],
   ['faheim', 'langchain'], ['faheim', 'fastapi'], ['faheim', 'aws'], ['yolo', 'ultralytics'],
   ['hidaya', 'kotlin'], ['hidaya', 'android'], ['asaar', 'go'], ['asaar', 'aws'], ['asaar', 'android'],
+  ['rune', 'kotlin'], ['rune', 'android'], ['rune', 'rust'],
   ['airaware', 'xgboost'], ['airaware', 'selenium'],
 ]
 
 // Angle (degrees) of each node around me; tools sit on the outer ring.
 export const ANG: Record<string, number> = {
-  ksu: 198, airaware: 165, hidaya: 132, asaar: 108, yolo: 72, contentminer: 45, retrievalengine: 18, cortex: 350, compliance: 322, faheim: 296, entropy: 268, masterworks: 234,
-  xgboost: 190, selenium: 160, kotlin: 130, android: 110, go: 94, ultralytics: 70, vlm: 50, qdrant: 30, restate: 14, neo4j: 0, nextjs: 345, pydantic: 330, openllm: 314, fastapi: 298, langchain: 283, aws: 262,
+  ksu: 198, airaware: 165, hidaya: 138, asaar: 115, rune: 93, yolo: 68, contentminer: 45, retrievalengine: 18, cortex: 350, compliance: 322, faheim: 296, entropy: 268, masterworks: 234,
+  xgboost: 190, selenium: 160, kotlin: 130, android: 110, go: 98, rust: 84, ultralytics: 68, vlm: 50, qdrant: 30, restate: 14, neo4j: 0, nextjs: 345, pydantic: 330, openllm: 314, fastapi: 298, langchain: 283, aws: 262,
 }
 
 export const W = 700, H = 600, CX = 350, CY = 290
